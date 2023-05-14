@@ -2,9 +2,9 @@ import { ControlPanel } from "../components/ControlPanel";
 import { Menu } from "../components/Menu"
 import { ServerContainer } from "../components/ServerContainer";
 
-import '../assets/Dashboard.scss';
+import '../assets/console.scss';
 
-export const Dashboard = () => {
+export const Console = () => {
 	return (
 		<>
 			<Menu />
