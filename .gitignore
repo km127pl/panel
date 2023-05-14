@@ -7,7 +7,6 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 .yarn-integrity
-yarn.lock
 
 node_modules
 dist
