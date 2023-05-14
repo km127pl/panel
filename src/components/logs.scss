@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import './global.scss';
+
+.log {
+	display: flex;
+	flex-direction: row;
+	gap: 1rem;
+	font-family: 'Roboto Mono', monospace;
+	font-size: 1.1rem;
+	font-weight: 400;
+	color: $fg;
+	padding: 0.1rem 0rem;
+	width: 100%;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	word-wrap: normal;
+}
+
+.timestamp,
+.prefix {
+	color: $fg-dim2;
+
+	&::before {
+		content: "[";
+	}
+
+	&::after {
+		content: "]";
+	}
+}
+
+.prefix,
+.timestamp {
+	user-select: none;
+}

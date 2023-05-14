@@ -1,0 +1,8 @@
+@import './components/global.scss';
+
+body {
+	padding: 0;
+	margin: 0;
+	background-color: $bg;
+	overflow-y: hidden;
+}

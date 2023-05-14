@@ -1,0 +1,26 @@
+@import './global.scss';
+
+.info-module {
+	display: flex;
+	flex-direction: row;
+	background-color: $bg-dim2;
+	width: 85%;
+	border-radius: 5px;
+	margin: 0.5rem 0.5rem;
+	outline: $outline;
+	gap: 1.5em;
+	color: $fg-dim;
+
+	align-items: center;
+	padding: 0.5rem 0.5rem;
+
+	.icon {
+		background-color: $bg-light5;
+		width: 2rem;
+		height: 2rem;
+		border-radius: 8px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}

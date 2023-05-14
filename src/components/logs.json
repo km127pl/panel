@@ -1,0 +1,62 @@
+[
+	{
+		"timestamp": 1684052961,
+		"prefix": "INFO",
+		"message": "Starting minecraft server on *:25565"
+	},
+	{
+		"timestamp": 1684053961,
+		"prefix": "INFO",
+		"message": "Using default channel type"
+	},
+	{
+		"timestamp": 1684054961,
+		"prefix": "INFO",
+		"message": "Preparing level \"world\""
+	},
+	{
+		"timestamp": 1684055961,
+		"prefix": "INFO",
+		"message": "Preparing start region for dimension minecraft:overworld"
+	},
+	{
+		"timestamp": 1684056962,
+		"prefix": "INFO",
+		"message": "Preparing spawn area: 100%"
+	},
+	{
+		"timestamp": 1684056962,
+		"prefix": "INFO",
+		"message": "Done (0.087s)! For help, type \"help\""
+	},
+	{
+		"timestamp": 1684057962,
+		"prefix": "INFO",
+		"message": "Starting GS4 status listener"
+	},
+	{
+		"timestamp": 1684058962,
+		"prefix": "INFO",
+		"message": "Query running on *:25566"
+	},
+	{
+		"timestamp": 1684058962,
+		"prefix": "INFO",
+		"message": "Starting remote control listener"
+	},
+	{
+		"timestamp": 1684059962,
+		"prefix": "ERROR",
+		"message": "Exception handling console input"
+	},
+	{
+		"timestamp": 1684060962,
+		"prefix": "DAEMON",
+		"message": "You won't be able to use the console unless you restart the server"
+	},
+	{
+		"timestamp": 1684061962,
+		"prefix": "WARN",
+		"message": "This is a demo session, not a real server."
+	}
+]

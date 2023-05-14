@@ -1,0 +1,82 @@
+@import './global.scss';
+
+.control-panel {
+	position: absolute;
+	top: 100px;
+	display: flex;
+	flex-direction: column;
+
+	background-color: $bg;
+
+	border-radius: 5px;
+	font-family: $font;
+
+	margin-left: 20px;
+
+	float: left;
+	z-index: 1;
+
+	left: 68vw;
+	width: 14vw;
+	height: 100vh;
+
+	.header {
+		font-size: 1.4rem;
+		font-weight: 400;
+		color: $fg-dim;
+		padding: 0.6rem 0rem;
+
+		.subtitle {
+			font-size: 1.2rem;
+			font-weight: 400;
+			color: $fg-dim2;
+
+			svg {
+				margin-left: 0.6rem;
+				color: $accent;
+				width: 16px;
+				height: 16px;
+			}
+		}
+	}
+
+	.manage {
+		width: 100%;
+		height: 63%;
+		background-color: $bg-dim;
+		outline: $outline;
+		border-radius: 5px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		.control-buttons {
+			width: 80%;
+			padding: 0.8rem 0.8rem;
+
+			button {
+				width: 100%;
+				background-color: $bg-dim;
+				color: $fg;
+				outline: $outline;
+				border: none;
+				border-radius: 5px;
+				padding: 0.4rem 0.4rem;
+				margin: 0.3rem 0rem;
+				font-size: 1rem;
+
+				&:hover {
+					background-color: $bg-light5;
+					outline: $outline-light;
+					border: none;
+				}
+
+				&:active {
+					background-color: $bg-light2;
+					outline: $outline-light;
+					border: none;
+				}
+			}
+		}
+	}
+}

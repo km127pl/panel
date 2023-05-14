@@ -1,0 +1,198 @@
+@import './global.scss';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700&display=swap');
+
+/* menu container */
+
+.menu {
+	padding: 6.5em 0;
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+
+	font-family: 'Inter',
+		sans-serif;
+	background-color: $bg;
+
+	outline: $outline;
+
+	hr {
+		width: 50%;
+		color: $fg-dim2;
+		margin: 0.8rem auto;
+	}
+
+	/* remove list style */
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		user-select: none;
+	}
+
+	.menu-item-icon {
+		width: 1.2rem;
+		height: 1.2rem;
+		margin-right: 0.4rem;
+		color: $fg;
+		padding: 1em 0.8rem;
+	}
+
+	.divider,
+	.menu-link,
+	.menu-logout,
+	.menu-category,
+	.menu-header {
+		display: none;
+	}
+
+
+	/* menu category */
+	.menu-category {
+		padding: 0.4rem 1.2rem;
+		font-size: 1.2rem;
+		font-weight: 600;
+		color: $fg-dim2;
+	}
+
+	.menu-logout-icon {
+		color: $red !important;
+		justify-self: center;
+		align-self: center;
+		display: flex;
+		margin: 15em auto;
+		width: 1.6rem;
+		height: 1.6rem;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	}
+
+	animation: slideIn 0.3s ease-in-out forwards;
+}
+
+.menu:hover {
+	font-family: 'Inter', sans-serif;
+
+	padding: 0 0;
+	width: 300px;
+	text-overflow: clip;
+
+	float: left;
+	z-index: 2;
+	top: 0;
+	left: 0;
+
+	outline: $outline;
+
+	/* menu items */
+	.menu-item {
+		padding: 0.6rem 3rem;
+		font-size: 1.2rem;
+		font-weight: 500;
+		color: $fg;
+		width: 70%;
+		cursor: pointer;
+
+		/* menu item hover */
+		a:hover,
+		a.active,
+		&:hover,
+		.highlight {
+			color: $fg-dim2;
+
+			a {
+				color: $fg-dim2;
+			}
+		}
+
+		a {
+			text-decoration: none;
+			color: $fg;
+			padding: 0 0.8rem;
+		}
+	}
+
+	.menu-logout {
+		color: $red !important;
+		display: unset;
+	}
+
+	.menu-logout-icon {
+		display: none;
+	}
+
+	.menu-link {
+		display: unset;
+	}
+
+	.menu-item-icon {
+		width: 1.2rem;
+		height: 1.2rem;
+		margin-right: 0.4rem;
+		padding: 0 0;
+	}
+
+
+	/* menu category */
+	.menu-category {
+		padding: 0.4rem 1.2rem;
+		font-size: 1.2rem;
+		font-weight: 600;
+		color: $fg-dim2;
+	}
+
+	/* menu header */
+	.menu-header {
+		width: 100%;
+		text-align: center;
+		font-size: 1.7rem;
+		font-weight: 700;
+		padding: 2.5rem 0 2.5rem 0;
+		background: linear-gradient(120deg, $primary, $accent);
+		-webkit-background-clip: text;
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+		display: unset;
+
+	}
+
+	/* place items at the bottom of the menu */
+	.menu-bottom {
+		margin-top: auto;
+		padding: 1rem 0;
+		text-align: center;
+		font-size: 1.2rem;
+		font-weight: 600;
+		color: $fg-dim2;
+
+		/* place it at the bottom of the menu */
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+	}
+
+	/* after the menu is closed */
+	animation: slideIn2 0.3s ease-in-out forwards;
+}
+
+@keyframes slideIn {
+	from {
+		transform: translateX(-100%);
+	}
+
+	to {
+		transform: translateX(0);
+	}
+}
+
+@keyframes slideIn2 {
+	from {
+		transform: translateX(-100%);
+	}
+
+	to {
+		transform: translateX(0);
+	}
+}

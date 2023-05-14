@@ -1,0 +1,20 @@
+@use 'sass:color';
+
+$bg: #151314;
+$bg-dim: color.scale($bg, $lightness: -10%);
+$bg-dim2: color.scale($bg, $lightness: -20%);
+$bg-light5: color.scale($bg, $lightness: 1%, $saturation: -10%);
+$bg-light: color.scale($bg, $lightness: 10%);
+$bg-light2: color.scale($bg, $lightness: 20%);
+$fg: #e8cfb1;
+$fg-dim: color.scale($fg, $lightness: -10%, $saturation: -33%);
+$fg-dim2: color.scale($fg, $lightness: -30%, $saturation: -50%);
+$primary: #f1be70;
+$secondary: #e7ceb0;
+$accent: #e07534;
+$red: #fd4a4a;
+$green: #00C48C;
+$yellow: #FFB800;
+$font: 'Inter', sans-serif;
+$outline: 1px solid $fg-dim2;
+$outline-light: 1px solid $fg-dim;
