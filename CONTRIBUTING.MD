@@ -17,3 +17,7 @@ If you have an idea for a feature, please open an issue with the enhancement lab
 #### Pull requests
 If you would like to contribute code, please open a pull request with a description of the changes you made.
 The pull request will be reviewed and merged if it is accepted.
+
+For development, I'd recommend using [Visual Studio Code](https://code.visualstudio.com/) with the [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) and [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) extensions.
+
+Or if you prefer, you can use [WebStorm](https://www.jetbrains.com/webstorm/). It has built-in support for ESLint and Prettier.
