@@ -5,12 +5,23 @@ import './assets/main.scss';
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import {Error} from "./pages/Error.tsx";
 import {Redirect} from "./pages/Redirect.tsx";
+import {ServerList} from "./pages/ServerList.tsx";
 
 const router = createBrowserRouter([
 	{
 		path: "/",
-		element: <Redirect to={"/server/console"} />,
+		element: <Redirect to={"/server"} />,
 		errorElement: <Error title={"Not found"} code={404} message={"This page does not exist."} />,
+	},
+	{
+		path: "/server",
+		element: <ServerList servers={[
+			{
+				name: "Test server",
+				description: "This is a test server.",
+				icon: "",
+				status: "Online",
+			}]}/>,
 	},
 	{
 		path: "/server/console",

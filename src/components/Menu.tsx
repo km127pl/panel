@@ -14,7 +14,11 @@ interface MenuItems {
 	}
 }
 
-export const Menu = () => {
+interface MenuProps {
+	current: string // link
+}
+
+export const Menu = ({ current }: MenuProps) => {
 	const items: MenuItems = {
 		"Dashboard": {
 			"items": [
@@ -94,10 +98,8 @@ export const Menu = () => {
 									{items[key].items.map((item) => {
 										return (
 											<li key={item.text} className={item.highlight ? "menu-item highlight" : "menu-item"}>
-												<FontAwesomeIcon icon={item.icon} className="menu-item-icon" />
-												<a href={item.link} className='menu-link'>
-													{item.text}
-												</a>
+												<FontAwesomeIcon icon={item.icon} className={current === item.link ? "menu-item-icon current" : "menu-item-icon"} />
+												<a href={item.link} className={current === item.link ? "menu-item-link current" : "menu-item-link"}>{item.text}</a>
 											</li>
 										)
 									})}
