@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import './controlpanel.scss';
+import '../assets/controlpanel.scss';
 import { faCircle } from '@fortawesome/free-solid-svg-icons';
 import { InfoModule } from './InfoModule';
 

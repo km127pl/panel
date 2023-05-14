@@ -1,6 +1,6 @@
 import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import './infomodule.scss';
+import '../assets/infomodule.scss';
 
 interface InfoModuleProps {
 	type: string,

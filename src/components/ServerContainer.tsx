@@ -1,5 +1,5 @@
 import { LogsRenderer } from './LogsRenderer';
-import './servercontainer.scss';
+import '../assets/servercontainer.scss';
 
 interface ServerContainerProps {
 	uuid: string,

@@ -2,7 +2,7 @@ import { ControlPanel } from "../components/ControlPanel";
 import { Menu } from "../components/Menu"
 import { ServerContainer } from "../components/ServerContainer";
 
-import './Dashboard.scss';
+import '../assets/Dashboard.scss';
 
 export const Dashboard = () => {
 	return (

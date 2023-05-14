@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import './logs.scss';
-import logs from './logs.json' assert {
+import '../assets/logs.scss';
+import logs from '../assets/logs.json' assert {
 	"type": "json"
 }
 

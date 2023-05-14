@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import './menu.scss';
+import '../assets/menu.scss';
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { faHome, faShieldHalved, faUser, faKey, faRightFromBracket, faLocationArrow, faPlay, faTerminal, faFile, faDatabase, faWifi } from '@fortawesome/free-solid-svg-icons';
 
